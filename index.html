@@ -15,11 +15,10 @@
     <div class="left">Amaan's portfolio</div>
     <div class="right">
       <ul>
-        <li>Home</li>
+        <a href="#first"><li>Home</li></a>
+        <a href="#second"><li>Work</li></a></li>
+        <a href="https://whatsapp.me/9891273422"><li>Contact Me</li></a>
         
-         <li>services</li>
-        <li>projects</li>
-        <li>Contact Me</li>
       </ul>
     </div>
     
@@ -34,6 +33,7 @@
     background-color: rgb(0 , 0 , 33);
     color: white;
     font-family: 'poppins' , sans-serif;
+    
   }
   nav{
     display: flex;
@@ -77,17 +77,238 @@
     .purple{
       color: rgb(170 ,107 , 228);
     }
+    nav ul li a{
+      text-decoration: none;
+      cursor: pointer;
+    }
+    nav ul li a:hover{
+      color: rgb(153, 153, 226);
+      
+    font-size: 1.01rem;
+    }
+    main hr{
+      border: 0;
+      background: #9c97f1;
+      height: 1.2px;
+      margin: 60px 100px;
+     
+    }
+    #element{
+      color: rgb(170 ,107 , 228);
+    }
+    .SecondSection{
+      max-width: 80vw;
+     margin: 130px 0;
+     height: 80vh;
+    }
+  .SecondSection h1{
+    font-size: 1.9rem;
+  }
+  .text-gray{
+    color: grey;
+  }
+  .SecondSection .box{
+    background: white;
+    width: 80vh;
+   height: 2px;
+  margin: 56px 0;
+  display: flex;
+  }
+  .SecondSection .box .vertical{
+    height: 93px;
+    width: 1px;
+    background-color: white;
+    margin: 0 98.5px 0;
+   
+  }
+  
+  .image-top{
+    width: 23px;
+    position: relative;
+   top: -32px;
+  left: -9px;
+  }
+  .vertical-tittle{
+    position: relative;
+    top: 75px;
+    width: 150px;
+    right: 31px;
+  }
+  
+  .vertical-desc{
+    position: relative;
+    top: 86px;
+    color: grey;
+    width: 150px;
+    font-size: 9px;
+    right: 31px
+  }
+  footer{
+    background-color: #0e0e1a;
+    height: 233px;
+  }
+  .footer{
+    display: flex;
+    padding: 23px 122px;
+    justify-content: space-evenly;
+    }
+    .footer ul{
+      list-style: none;
+    }
+    .footer > div{
+      width: 223px;
+    }
+    footer .footer-rights{
+      text-align: center;
+    }
+    footer .footer ul a{
+      text-decoration: none;
+    }
+    footer .footer ul li{
+     color: rgb(170 ,107 , 228);
+    
+    }
+    .LeftSection .btn{
+      padding: 12px;
+      background-color: #1e2167;
+      color: white;
+      border: solid 2px white;
+      border-radius: 6px;
+      font-size: 20px;
+     cursor: pointer;
+    }
+    header nav ul a{
+      text-decoration: none;
+    }
+    header nav ul li{
+      color: rgb(170 ,107 , 228);
+    }
+    html{
+      scroll-behavior: smooth;
+    }
 </style>
 <main>
-  <section class="FirstSection">
+  <section class="FirstSection" id="first">
     <div class="LeftSection">Hi, My name is <span class="purple">Amaan</span> 
     <div>and I am a passionate </div>
-    <div>Web Developer</div>
+    <span id="element"></span>
+    <div class="buttons">
+      <a href="https://github.com/Koder-academy60">
+      <button class="btn">visit Github</button>
+      </a>
+    </div>
     </div>
     <div class="RightSection">
       <img src="Bg.png"
     </div>
   </section>
+  <section class="SecondSection" id="second">
+    <hr>
+    <span class="text-gray">what i have done so far</span>
+    <h1>Work Experience</h1>
+    <div class="box">
+      <div class="vertical">
+        <img src="PYTHON.png" class="image-top">
+        <div class="vertical-text">
+          <div class="vertical-tittle">
+          Started coding
+          </div>
+          <div class="vertical-desc">
+           I got introduction by coding from my cousin and I made interest in it and planed to start coding.I started my coding journey from python
+          </div>
+        </div>
+      </div>
+      <div class="vertical">
+        
+      </div>
+      <div class="vertical">
+        <img src="CSS.png" class="image-top">
+        <div class="vertical-text">
+          <div class="vertical-tittle">
+           Started as a web designer
+          </div>
+          <div class="vertical-desc">
+           I got introduction by web designing.And started it from css.
+          </div>
+        </div>
+      </div>
+      <div class="vertical">
+        
+      </div>
+      <div class="vertical">
+        <img src="JS.png" class="image-top">
+        <div class="vertical-text">
+          <div class="vertical-tittle">
+          Started Backend Web development
+          </div>
+          <div class="vertical-desc">
+           I got introduction by Backend Web development .I started my  Backend Web development  journey from JS
+          </div>
+        </div>
+      </div>
+      <div class="vertical">
+        
+      </div>
+      <div class="vertical">
+        <img src="ANGULAR.png" class="image-top">
+        <div class="vertical-text">
+          <div class="vertical-tittle">
+           introduction from framework
+          </div>
+          <div class="vertical-desc">
+           Started one page programming from Angular.JS and React.JS
+          </div>
+        </div>
+      </div>
+      <div class="vertical">
+        
+      </div>
+      <div class="vertical"></div>
+    </div>
+    
+  </section>
 </main>
+<footer>
+  <div class="footer">
+    <div class="footer-first">
+      <h3>Amaan's developer portfolio</h3>
+    </div>
+    <div class="footer-second">
+          <ul>
+  <a href="#first"><li>Home</li></a>
+  <a href="#second"><li>work</li></a>
+  <a href="https://whatsapp.me/+919891273422"><li>contact me</li></a>
+</ul>
+    </div>
+    <div class="footer-third">
+         <ul>
+  <a href="#first"><li>Home</li></a>
+  <a href="#second"><li>work</li></a>
+  <a href="https://whatsapp.me/+919891273422"><li>contact me</li></a>
+</ul>
+    </div>
+    <div class="footer-fourth">
+      <ul>
+  <a href="#first"><li>Home</li></a>
+  <a href="#second"><li>work</li></a>
+  <a href="https://whatsapp.me/+919891273422"><li>contact me</li></a>
+</ul>
+    </div>
+  </div>
+  <div class="footer-rights">
+    www.koder-academy.netlify.app | All rights reserved
+  </div>
+</footer>
+<!-- Load library from the CDN -->
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+<!-- Setup and start animation! -->
+<script>
+  var typed = new Typed('#element', {
+    strings: ['web designer.', 'marketing expert', 'Web developer.'],
+    typeSpeed: 50,
+  });
+</script>
+
 </body>
 </html>
